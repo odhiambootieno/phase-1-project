@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beauty Space</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Beauty Space</h1>
+        <input type="text" id="search" placeholder="Search for products...">
+        <div id="filters">
+            <select id="brand-filter">
+                <option value="">Select Brand</option>
+            </select>
+            <input type="number" id="price-min" placeholder="Min Price">
+            <input type="number" id="price-max" placeholder="Max Price">
+            <button id="filter-button">Filter</button>
+        </div>
+    </header>
+    <main>
+        <div id="product-list"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
