@@ -108,8 +108,11 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+
+Thank you for checking out The Beauty Space! We hope you enjoy exploring the world of makeup products.
+
+
 ## contact 
 
 Gmail (mail to brianmkcnight@gmail.com )
 
-Thank you for checking out The Beauty Space! We hope you enjoy exploring the world of makeup products.
