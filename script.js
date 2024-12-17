@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             products = data;
             populateBrandFilter(products);
             displayProducts(products);
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+            productList.innerHTML = "<p>Failed to load products. Please try again later.</p>";
         });
 
     // Populate brand filter dropdown
@@ -59,4 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const priceMin = parseFloat(priceMinInput.value) || 0;
         const priceMax = parseFloat(priceMaxInput.value) || Infinity;
 
-        const filteredProducts = products.filter
+        const filteredProducts = products.filter(product => {
+            const isBrandMatch = selectedBrand ? product.brand === selectedBrand : true;
+            const isPriceMatch = product.price > priceMin && product.price < priceMax;
+            return isBrandMatch && isPriceMatch;
+        });
+
+        displayProducts(filteredProducts);
+    });
+});
