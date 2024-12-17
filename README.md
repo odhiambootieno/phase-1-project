@@ -72,7 +72,7 @@ To set up the project locally, follow these steps:
 
 3. Click on a product to view detailed information.
 
-##API Endpoints
+## API Endpoints
 
 The application interacts with the following API endpoints:
 
